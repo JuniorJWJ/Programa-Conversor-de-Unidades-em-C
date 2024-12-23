@@ -176,3 +176,5 @@ void conversorVelocidade()
         }
     }while (cVelocidade !=0);
 }
+
+//fim do conversor de velocidade
