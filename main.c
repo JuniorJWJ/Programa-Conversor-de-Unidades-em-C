@@ -7,7 +7,7 @@ int main()
 
     do
     {
-        printf("CONVERSO DE UNIDADES EM C:");
+        printf("CONVERSO DE UNIDADES EM C:\n");
         printf("1. (colocar o tipo de conversao)\n");
         printf("2. (colocar o tipo de conversao)\n");
         printf("3. (colocar o tipo de conversao)\n");
@@ -25,31 +25,40 @@ int main()
         switch (conversao)
         {
         case 1:
-            printf("adicionar subinterface do tipo de conversao");
+            printf("adicionar a funcao do tipo de conversao");
+            printf("\n");
             break;
         case 2:
-            printf("adicionar subinterface do tipo de conversao");
+            printf("adicionar a funcao do tipo de conversao");
+            printf("\n");
             break;
         case 3:
-            printf("adicionar subinterface do tipo de conversao");
+            printf("adicionar a funcao do tipo de conversao");
+            printf("\n");
             break;
         case 4:
-            printf("adicionar subinterface do tipo de conversao");
+            printf("adicionar a funcao do tipo de conversao");
+            printf("\n");
             break;
         case 5:
-            printf("adicionar subinterface do tipo de conversao");
+            printf("adicionar a funcao do tipo de conversao");
+            printf("\n");
             break;
         case 6:
-            printf("adicionar subinterface do tipo de conversao");
+            printf("adicionar a funcao do tipo de conversao");
+            printf("\n");
             break;
         case 7:
-            printf("adicionar subinterface do tipo de conversao");
+            printf("adicionar a funcao do tipo de conversao");
+            printf("\n");
             break;
         case 8:
-            printf("adicionar subinterface do tipo de conversao");
+            printf("adicionar a funcao do tipo de conversao");
+            printf("\n");
             break;
         case 9:
-            printf("adicionar subinterface do tipo de conversao");
+            printf("adicionar a funcao do tipo de conversao");
+            printf("\n");
             break;
         default:
             break;
