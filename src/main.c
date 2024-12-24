@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 
+#include "../include/bits.h"
 #include "../include/velocidade.h"
 #include "../include/comprimento.h"
 #include "../include/volume.h"
@@ -9,14 +11,22 @@
 
 int main()
 {
-    system("chcp 65001>null");  //função para aceitar caracteres em pt-br
+    setlocale(LC_ALL, "pt_BR.UTF-8");
+    
+    #ifdef _WIN32
+        system("chcp 65001");  // Função para aceitar caracteres em pt-br, funciona apenas no Windows
+    #endif
 
     int conversao;
 
     do
-    {
+    {    
+        clearTerminal();
+
         printf("CONVERSOR DE UNIDADES EM C:\n");
+        
         printf("1. Conversor de Velocidade\n");
+
         printf("2. Conversor de Comprimento\n");
         printf("3. Conversor de Volume\n");
         printf("4. Conversor de Tempo\n");
@@ -24,9 +34,10 @@ int main()
         printf("6. (colocar o tipo de conversao)\n");
         printf("7. (colocar o tipo de conversao)\n");
         printf("8. (colocar o tipo de conversao)\n");
-        printf("9. (colocar o tipo de conversao)\n");
+        printf("9. Conversor de Bits\n");
         printf("0. Sair\n");
-        printf("Escolha o tipo de conversao que deseje fazer: ");
+
+        printf("Escolha o tipo de conversão que deseja fazer: ");
         scanf("%d", &conversao);
         printf("\n");
         
@@ -36,11 +47,9 @@ int main()
         {
         case 1:
             conversorVelocidade();
-            printf("\n");
             break;
         case 2:
             conversorComprimento();
-            printf("\n");
             break;
         case 3:
             conversorVolume();
@@ -51,31 +60,22 @@ int main()
             printf("\n");
             break;
         case 5:
-            printf("adicionar a funcao do tipo de conversao");
-            printf("\n");
+            // TODO: Adicionar a função do tipo de conversão
             break;
         case 6:
-            printf("adicionar a funcao do tipo de conversao");
-            printf("\n");
+            // TODO: Adicionar a função do tipo de conversão
             break;
         case 7:
-            printf("adicionar a funcao do tipo de conversao");
-            printf("\n");
+            // TODO: Adicionar a função do tipo de conversão
             break;
         case 8:
-            printf("adicionar a funcao do tipo de conversao");
-            printf("\n");
+            // TODO: Adicionar a função do tipo de conversão
             break;
         case 9:
-            printf("adicionar a funcao do tipo de conversao");
-            printf("\n");
+            runBitsConversor();
             break;
         default:
             break;
-        case 0:
-            printf("Saindo...\n");
-            printf("\n");
-            break;
         }
-    } while (conversao !=0);    
+    } while (conversao != 0); 
 }
