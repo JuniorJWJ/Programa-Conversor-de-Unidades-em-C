@@ -7,6 +7,7 @@
 #include "../include/comprimento.h"
 #include "../include/volume.h"
 #include "../include/limpaTelaePause.h"
+#include "../include/tempo.h"
 
 int main()
 {
@@ -25,13 +26,14 @@ int main()
         printf("CONVERSOR DE UNIDADES EM C:\n");
         
         printf("1. Conversor de Velocidade\n");
-        printf("2. Conversor de Comprimento\n");        
+
+        printf("2. Conversor de Comprimento\n");
         printf("3. Conversor de Volume\n");
-        printf("4. Conversor de UNDEFINED\n");
-        printf("5. Conversor de UNDEFINED\n");
-        printf("6. Conversor de UNDEFINED\n");
-        printf("7. Conversor de UNDEFINED\n");
-        printf("8. Conversor de UNDEFINED\n");
+        printf("4. Conversor de Tempo\n");
+        printf("5. (colocar o tipo de conversao)\n");
+        printf("6. (colocar o tipo de conversao)\n");
+        printf("7. (colocar o tipo de conversao)\n");
+        printf("8. (colocar o tipo de conversao)\n");
         printf("9. Conversor de Bits\n");
         printf("0. Sair\n");
 
@@ -54,7 +56,8 @@ int main()
             printf("\n");
             break;
         case 4:
-            // TODO: Adicionar a função do tipo de conversão
+            conversorTempo();
+            printf("\n");
             break;
         case 5:
             // TODO: Adicionar a função do tipo de conversão
