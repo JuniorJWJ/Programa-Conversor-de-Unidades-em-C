@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "limpaTelaePause.h"
 
 float metroparacent(float metro) {
     return metro*100.0;
@@ -79,5 +80,7 @@ void conversorComprimento() {
                 printf("Selecione uma opção válida!\n\n");
                 break;
         }
+        pause();
+        limparTela();
     } while (cComprimento != 0);
 }
