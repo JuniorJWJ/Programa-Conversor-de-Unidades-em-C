@@ -27,11 +27,11 @@ int main()
         printf("1. Conversor de Velocidade\n");
         printf("2. Conversor de Comprimento\n");        
         printf("3. Conversor de Volume\n");
-        printf("4. (colocar o tipo de conversão)\n");
-        printf("5. (colocar o tipo de conversão)\n");
-        printf("6. (colocar o tipo de conversão)\n");
-        printf("7. (colocar o tipo de conversão)\n");
-        printf("8. (colocar o tipo de conversão)\n");
+        printf("4. Conversor de UNDEFINED\n");
+        printf("5. Conversor de UNDEFINED\n");
+        printf("6. Conversor de UNDEFINED\n");
+        printf("7. Conversor de UNDEFINED\n");
+        printf("8. Conversor de UNDEFINED\n");
         printf("9. Conversor de Bits\n");
         printf("0. Sair\n");
 
@@ -54,19 +54,19 @@ int main()
             printf("\n");
             break;
         case 4:
-            printf("adicionar a função do tipo de conversão");
+            // TODO: Adicionar a função do tipo de conversão
             break;
         case 5:
-            printf("adicionar a função do tipo de conversão");
+            // TODO: Adicionar a função do tipo de conversão
             break;
         case 6:
-            printf("adicionar a função do tipo de conversão");
+            // TODO: Adicionar a função do tipo de conversão
             break;
         case 7:
-            printf("adicionar a função do tipo de conversão");
+            // TODO: Adicionar a função do tipo de conversão
             break;
         case 8:
-            printf("adicionar a função do tipo de conversão");
+            // TODO: Adicionar a função do tipo de conversão
             break;
         case 9:
             runBitsConversor();
