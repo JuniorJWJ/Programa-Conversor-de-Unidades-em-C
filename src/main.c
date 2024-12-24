@@ -3,17 +3,21 @@
 
 #include "../include/velocidade.h"
 #include "../include/comprimento.h"
+#include "../include/volume.h"
+#include "../include/limpaTelaePause.h"
 
 int main()
 {
+    system("chcp 65001>null");  //função para aceitar caracteres em pt-br
+
     int conversao;
 
     do
     {
         printf("CONVERSOR DE UNIDADES EM C:\n");
         printf("1. Conversor de Velocidade\n");
-        printf("2. Conversor de Comprimento)\n");
-        printf("3. (colocar o tipo de conversao)\n");
+        printf("2. Conversor de Comprimento\n");
+        printf("3. Conversor de volume\n");
         printf("4. (colocar o tipo de conversao)\n");
         printf("5. (colocar o tipo de conversao)\n");
         printf("6. (colocar o tipo de conversao)\n");
@@ -24,6 +28,8 @@ int main()
         printf("Escolha o tipo de conversao que deseje fazer: ");
         scanf("%d", &conversao);
         printf("\n");
+        
+        limparTela();
 
         switch (conversao)
         {
@@ -36,7 +42,7 @@ int main()
             printf("\n");
             break;
         case 3:
-            printf("adicionar a funcao do tipo de conversao");
+            conversorVolume();
             printf("\n");
             break;
         case 4:
