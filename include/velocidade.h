@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "limpaTelaePause.h"
 
 //conversor de velocidade
 double kmhParaMetros(double kmh)
@@ -91,6 +92,8 @@ void conversorVelocidade()
             printf("\n");
             break;
         }
+        pause();
+        limparTela();
     }while (cVelocidade !=0);
 }
 
