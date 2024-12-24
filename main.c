@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "velocidade.h"
+#include "comprimento.h"
 
 int main()
 {
@@ -10,7 +11,7 @@ int main()
     {
         printf("CONVERSOR DE UNIDADES EM C:\n");
         printf("1. Conversor de Velocidade\n");
-        printf("2. (colocar o tipo de conversao)\n");
+        printf("2. Conversor de Comprimento)\n");
         printf("3. (colocar o tipo de conversao)\n");
         printf("4. (colocar o tipo de conversao)\n");
         printf("5. (colocar o tipo de conversao)\n");
@@ -30,7 +31,7 @@ int main()
             printf("\n");
             break;
         case 2:
-            printf("adicionar a funcao do tipo de conversao");
+            conversorComprimento();
             printf("\n");
             break;
         case 3:
