@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "velocidade.h"
+#include "../include/velocidade.h"
 
 int main()
 {
