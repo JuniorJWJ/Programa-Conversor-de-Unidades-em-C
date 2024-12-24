@@ -11,7 +11,10 @@
 int main()
 {
     setlocale(LC_ALL, "pt_BR.UTF-8");
-    system("chcp 65001>null");  //função para aceitar caracteres em pt-br
+    
+    #ifdef _WIN32
+        system("chcp 65001");  // Função para aceitar caracteres em pt-br, funciona apenas no Windows
+    #endif
 
     int conversao;
 
