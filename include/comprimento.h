@@ -30,6 +30,8 @@ void conversorComprimento() {
     float valorV;
 
     do {
+        clearTerminal();
+        
         printf("CONVERSOR DE COMPRIMENTO: \n");
         printf("1. Metro para Centímetro.\n");
         printf("2. Metro para Milímetro.\n");

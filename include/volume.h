@@ -29,7 +29,9 @@ void conversorVolume() {
     int cVolume;
     float valorV;
 
-    do {
+    do {        
+        clearTerminal();
+
         printf("CONVERSOR DE VOLUME: \n");
         printf("1. Litro para Mililitro.\n");
         printf("2. Litro para Metro Cúbico.\n");
