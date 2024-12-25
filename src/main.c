@@ -8,6 +8,7 @@
 #include "../include/volume.h"
 #include "../include/limpaTelaePause.h"
 #include "../include/tempo.h"
+#include "../include/temperatura.h"
 
 int main()
 {
@@ -30,7 +31,7 @@ int main()
         printf("2. Conversor de Comprimento\n");
         printf("3. Conversor de Volume\n");
         printf("4. Conversor de Tempo\n");
-        printf("5. (colocar o tipo de conversao)\n");
+        printf("5. Conversor de Temperatura\n");
         printf("6. (colocar o tipo de conversao)\n");
         printf("7. (colocar o tipo de conversao)\n");
         printf("8. (colocar o tipo de conversao)\n");
@@ -58,8 +59,10 @@ int main()
             conversorTempo();
             break;
         case 5:
-            // TODO: Adicionar a função do tipo de conversão
+             conversorTemperatura();  // Chama o conversor de temperatura
+            printf("\n");
             break;
+
         case 6:
             // TODO: Adicionar a função do tipo de conversão
             break;
