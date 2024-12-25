@@ -53,11 +53,9 @@ int main()
             break;
         case 3:
             conversorVolume();
-            printf("\n");
             break;
         case 4:
             conversorTempo();
-            printf("\n");
             break;
         case 5:
             // TODO: Adicionar a função do tipo de conversão

@@ -26,6 +26,8 @@ void conversorTempo() {
     double valorT;
 
     do {
+        clearTerminal();
+        
         printf("CONVERSOR DE TEMPO: \n");
         printf("1. Segundos para minutos.\n");
         printf("2. Segundos para horas.\n");

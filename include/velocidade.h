@@ -32,7 +32,9 @@ void conversorVelocidade()
     int cVelocidade;
     double valorV;
 
-    do{
+    do {
+        clearTerminal();
+
         printf("CONVERSOR DE VELOCIDADE: \n");
         printf("1. Km/h para m/s.\n");
         printf("2. Km/h para mph.\n");
