@@ -5,6 +5,8 @@
 #include "../include/comprimento.h"
 #include "../include/volume.h"
 #include "../include/limpaTelaePause.h"
+#include "../include/massa.h"
+
 
 int main()
 {
@@ -18,7 +20,7 @@ int main()
         printf("1. Conversor de Velocidade\n");
         printf("2. Conversor de Comprimento\n");
         printf("3. Conversor de volume\n");
-        printf("4. (colocar o tipo de conversao)\n");
+        printf("4. (Conversor de massa)\n");
         printf("5. (colocar o tipo de conversao)\n");
         printf("6. (colocar o tipo de conversao)\n");
         printf("7. (colocar o tipo de conversao)\n");
