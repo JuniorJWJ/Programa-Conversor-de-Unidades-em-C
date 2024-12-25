@@ -34,7 +34,7 @@ int main()
         printf("4. Conversor de Tempo\n");
         printf("5. Conversor de Temperatura\n");
         printf("6. COnversor de massa\n");
-        printf("7. (Conversor de Potencia)\n");
+        printf("7. Conversor de Potencia\n");
         printf("8. (colocar o tipo de conversao)\n");
         printf("9. Conversor de Bits\n");
         printf("0. Sair\n");
