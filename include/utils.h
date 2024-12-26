@@ -52,4 +52,13 @@ void clearTerminal() {
     #endif
 }
 
+void pause() {
+    #ifdef _WIN32
+        system("pause"); // Pausa o terminal no Windows
+    #else
+        printf("Pressione Enter para continuar...");
+        getchar();
+    #endif
+}
+
 #endif

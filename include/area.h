@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "limpaTelaePause.h"
+#include "./utils.h"
 
 float metro2paracent2(float metro2) {
     return metro2*10000.0;
@@ -25,22 +25,29 @@ float mili2paracent2(float mili2) {
     return mili2/100.0;
 }
 
+void displayAreaMenu() {
+    printf("CONVERSOR DE ÁREA:\n\n");
+        
+    printf("1. Metro quadrado para Centímetro quadrado.\n");
+    printf("2. Metro quadrado para Milímetro quadrado.\n");
+    printf("3. Centímetro quadrado para Metro quadrado.\n");
+    printf("4. Centímetro quadrado para Milímetro quadrado.\n");
+    printf("5. Milímetro quadrado para Metro quadrado.\n");
+    printf("6. Milímetro quadrado para Centímetro quadrado.\n");
+    
+    printf("\n0. Sair.\n");
+}
+
 void conversorArea() {
     int cArea;
     float valorV;
 
     do {
-    
-        printf("CONVERSOR DE AREA: \n");
-        printf("1. Metro quadrado para Centímetro quadrado.\n");
-        printf("2. Metro quadrado para Milímetro quadrado.\n");
-        printf("3. Centímetro quadrado para Metro quadrado.\n");
-        printf("4. Centímetro quadrado para Milímetro quadrado.\n");
-        printf("5. Milímetro quadrado para Metro quadrado.\n");
-        printf("6. Milímetro quadrado para Centímetro quadrado.\n");
-        printf("0. Sair.\n");
-        printf("Escolha o tipo de conversão de área que deseja fazer: ");
-        scanf("%d", &cArea);
+        do {
+            clearTerminal();
+            displayAreaMenu();
+        } while (input(&cArea, INT, "\nEscolha o tipo de conversão que deseja fazer: ") != 1);
+
         printf("\n");
 
         switch (cArea) {
@@ -81,7 +88,7 @@ void conversorArea() {
                 printf("Selecione uma opção válida!\n\n");
                 break;
         }
+
         pause();
-        limparTela();
     } while (cArea != 0);
 }

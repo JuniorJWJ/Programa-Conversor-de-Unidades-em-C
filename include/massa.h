@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "limpaTelaePause.h"
+#include "./utils.h"
 
 float quilogramaParaGrama(float kg) {
     return kg * 1000.0;
@@ -30,16 +30,21 @@ void conversorMassa() {
     float valorM;
 
     do {
-        printf("CONVERSOR DE MASSA: \n");
-        printf("1. Quilograma para Grama.\n");
-        printf("2. Quilograma para Tonelada.\n");
-        printf("3. Grama para Quilograma.\n");
-        printf("4. Grama para Tonelada.\n");
-        printf("5. Tonelada para Quilograma.\n");
-        printf("6. Tonelada para Grama.\n");
-        printf("0. Sair.\n");
-        printf("Escolha o tipo de conversão de massa que deseja fazer: ");
-        scanf("%d", &cMassa);
+        do {
+            clearTerminal();
+            
+            printf("CONVERSOR DE MASSA:\n\n");
+
+            printf("1. Quilograma para Grama.\n");
+            printf("2. Quilograma para Tonelada.\n");
+            printf("3. Grama para Quilograma.\n");
+            printf("4. Grama para Tonelada.\n");
+            printf("5. Tonelada para Quilograma.\n");
+            printf("6. Tonelada para Grama.\n");
+            
+            printf("\n0. Sair.\n");
+        } while (input(&cMassa, INT, "\nEscolha o tipo de conversão que deseja fazer: ") != 1);
+
         printf("\n");
 
         switch (cMassa) {
@@ -81,6 +86,5 @@ void conversorMassa() {
                 break;
         }
         pause();
-        limparTela();
     } while (cMassa != 0);
 }

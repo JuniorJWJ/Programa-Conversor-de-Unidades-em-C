@@ -34,17 +34,21 @@ void conversorTemperatura() {
     float valorT;
 
     do {
-        printf("CONVERSOR DE TEMPERATURA:\n");
-        printf("1. Celsius para Fahrenheit.\n");
-        printf("2. Celsius para Kelvin.\n");
-        printf("3. Fahrenheit para Celsius.\n");
-        printf("4. Fahrenheit para Kelvin.\n");
-        printf("5. Kelvin para Celsius.\n");
-        printf("6. Kelvin para Fahrenheit.\n");
-        printf("0. Sair.\n");
-        printf("Escolha o tipo de conversão de temperatura que deseja fazer: ");
-        scanf("%d", &opcao);
-        printf("\n");
+        do {
+            clearTerminal();
+            
+            printf("CONVERSOR DE TEMPERATURA:\n\n");
+
+            printf("1. Celsius para Fahrenheit.\n");
+            printf("2. Celsius para Kelvin.\n");
+            printf("3. Fahrenheit para Celsius.\n");
+            printf("4. Fahrenheit para Kelvin.\n");
+            printf("5. Kelvin para Celsius.\n");
+            printf("6. Kelvin para Fahrenheit.\n");
+
+            printf("\n0. Sair.\n");
+        } while (input(&opcao, INT, "\nEscolha o tipo de conversão que deseja fazer: ") != 1);
+
 
         switch (opcao) {
             case 1:

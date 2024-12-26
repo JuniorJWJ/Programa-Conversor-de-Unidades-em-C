@@ -29,7 +29,7 @@ void conversorBits() {
         do {
             clearTerminal();
             displayBitsMenu();
-        } while (input(&option, INT, "\nEscolha uma opção: ") != 1);
+        } while (input(&option, INT, "\nEscolha o tipo de conversão que deseja fazer: ") != 1);
 
         switch (option) {
             case 1:
@@ -70,10 +70,7 @@ void conversorBits() {
                 break;
         }
 
-        if (option != 0) {
-            printf("\nPressione Enter para continuar...");
-            while (getchar() != '\n');
-        }
-    } while (option != 0);
+        pause();
+    } while (option != 0);  
 }
 #endif

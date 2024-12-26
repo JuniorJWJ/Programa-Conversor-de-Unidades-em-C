@@ -6,7 +6,6 @@
 #include "../include/velocidade.h"
 #include "../include/comprimento.h"
 #include "../include/volume.h"
-#include "../include/limpaTelaePause.h"
 #include "../include/massa.h"
 #include "../include/tempo.h"
 #include "../include/temperatura.h"
@@ -79,5 +78,5 @@ int main()
         default:
             break;
         }
-    } while (conversao != 0); 
+    } while (conversao != 0);
 }

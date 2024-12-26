@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "limpaTelaePause.h"
+#include "./utils.h"
 
 float litroParaMililitro(float litro) {
     return litro * 1000.0;
@@ -29,20 +29,19 @@ void conversorVolume() {
     int cVolume;
     float valorV;
 
-    do {        
-        clearTerminal();
+    do {
+        do{     
+            clearTerminal();
 
-        printf("CONVERSOR DE VOLUME: \n");
-        printf("1. Litro para Mililitro.\n");
-        printf("2. Litro para Metro Cúbico.\n");
-        printf("3. Mililitro para Litro.\n");
-        printf("4. Mililitro para Metro Cúbico.\n");
-        printf("5. Metro Cúbico para Litro.\n");
-        printf("6. Metro Cúbico para Mililitro.\n");
-        printf("0. Sair.\n");
-        printf("Escolha o tipo de conversão de volume que deseja fazer: ");
-        scanf("%d", &cVolume);
-        printf("\n");
+            printf("CONVERSOR DE VOLUME:\n\n");
+            printf("1. Litro para Mililitro.\n");
+            printf("2. Litro para Metro Cúbico.\n");
+            printf("3. Mililitro para Litro.\n");
+            printf("4. Mililitro para Metro Cúbico.\n");
+            printf("5. Metro Cúbico para Litro.\n");
+            printf("6. Metro Cúbico para Mililitro.\n");
+            printf("\n0. Sair.\n");
+        } while (input(&cVolume, INT, "\nEscolha o tipo de conversão que deseja fazer: ") != 1);
 
         switch (cVolume) {
             case 1:
@@ -82,7 +81,7 @@ void conversorVolume() {
                 printf("Selecione uma opção válida!\n\n");
                 break;
         }
+        
         pause();
-        limparTela();
     } while (cVolume != 0);
 }

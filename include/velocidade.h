@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "limpaTelaePause.h"
+#include "./utils.h"
 
 //conversor de velocidade
 double kmhParaMetros(double kmh)
@@ -33,19 +33,20 @@ void conversorVelocidade()
     double valorV;
 
     do {
-        clearTerminal();
+        do {
+            clearTerminal();
 
-        printf("CONVERSOR DE VELOCIDADE: \n");
-        printf("1. Km/h para m/s.\n");
-        printf("2. Km/h para mph.\n");
-        printf("3. M/s para km/h.\n");
-        printf("4. M/s para mph.\n");
-        printf("5. Mph para m/s.\n");
-        printf("6. Mph para Km/h\n");
-        printf("0. Sair.\n");
-        printf("Escolha o tipo de conversao de velocidade que deseje fazer: ");
-        scanf("%d", &cVelocidade);
-        printf("\n");
+            printf("CONVERSOR DE VELOCIDADE:\n\n");
+
+            printf("1. Km/h para m/s.\n");
+            printf("2. Km/h para mph.\n");
+            printf("3. M/s para km/h.\n");
+            printf("4. M/s para mph.\n");
+            printf("5. Mph para m/s.\n");
+            printf("6. Mph para Km/h\n");
+
+            printf("\n0. Sair.\n");
+        } while (input(&cVelocidade, INT, "\nEscolha o tipo de conversão que deseja fazer: ") != 1);
 
         switch (cVelocidade)
         {
@@ -94,8 +95,8 @@ void conversorVelocidade()
             printf("\n");
             break;
         }
+        
         pause();
-        limparTela();
     }while (cVelocidade !=0);
 }
 

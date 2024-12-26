@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "limpaTelaePause.h"
+#include "./utils.h"
 
 float metroparacent(float metro) {
     return metro*100.0;
@@ -25,23 +25,29 @@ float miliparacent(float mili) {
     return mili/10.0;
 }
 
+void displayComprimentoMenu() {
+    printf("CONVERSOR DE COMPRIMENTO:\n\n");
+            
+    printf("1. Metro para Centímetro.\n");
+    printf("2. Metro para Milímetro.\n");
+    printf("3. Centímetro para Metro.\n");
+    printf("4. Centímetro para Milímetro.\n");
+    printf("5. Milímetro para Metro.\n");
+    printf("6. Milímetro para Centímetro.\n");
+
+    printf("\n0. Sair.\n");
+}
+
 void conversorComprimento() {
     int cComprimento;
     float valorV;
 
     do {
-        clearTerminal();
-        
-        printf("CONVERSOR DE COMPRIMENTO: \n");
-        printf("1. Metro para Centímetro.\n");
-        printf("2. Metro para Milímetro.\n");
-        printf("3. Centímetro para Metro.\n");
-        printf("4. Centímetro para Milímetro.\n");
-        printf("5. Milímetro para Metro.\n");
-        printf("6. Milímetro para Centímetro.\n");
-        printf("0. Sair.\n");
-        printf("Escolha o tipo de conversão de comprimento que deseja fazer: ");
-        scanf("%d", &cComprimento);
+        do {
+            clearTerminal();
+            displayComprimentoMenu();
+        } while (input(&cComprimento, INT, "\nEscolha o tipo de conversão que deseja fazer: ") != 1);
+
         printf("\n");
 
         switch (cComprimento) {
@@ -82,7 +88,7 @@ void conversorComprimento() {
                 printf("Selecione uma opção válida!\n\n");
                 break;
         }
+        
         pause();
-        limparTela();
     } while (cComprimento != 0);
 }
