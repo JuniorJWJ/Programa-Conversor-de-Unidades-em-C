@@ -26,7 +26,7 @@ int main()
     {    
         clearTerminal();
 
-        printf("CONVERSOR DE UNIDADES EM C:\n");
+        printf("CONVERSOR DE UNIDADES EM C:\n\n");
         
         printf("1. Conversor de Velocidade\n");
         printf("2. Conversor de Comprimento\n");
@@ -37,10 +37,11 @@ int main()
         printf("7. Conversor de Potencia\n");
         printf("8. (colocar o tipo de conversao)\n");
         printf("9. Conversor de Bits\n");
-        printf("0. Sair\n");
-        printf("Escolha o tipo de conversão que deseja fazer: ");
+        
+        printf("\n0. Sair\n");
+        
+        printf("\nEscolha o tipo de conversão que deseja fazer: ");
         scanf("%d", &conversao);
-        printf("\n");
         
         limparTela();
 
@@ -60,22 +61,19 @@ int main()
             break;
         case 5:
             conversorTemperatura();  // Chama o conversor de temperatura
-            printf("\n");
             break;
 
         case 6:
             conversorMassa();
-            printf("\n");
             break;
         case 7:
             conversorPotencia();
-            printf("\n");
             break;
         case 8:
             // TODO: Adicionar a função do tipo de conversão
             break;
         case 9:
-            runBitsConversor();
+            conversorBits();
             break;
         default:
             break;
