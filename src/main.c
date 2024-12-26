@@ -13,6 +13,22 @@
 #include "../include/potencia.h"
 #include "../include/area.h"
 
+void displayMainMenu() {
+    printf("CONVERSOR DE UNIDADES EM C:\n\n");
+    
+    printf("1. Conversor de Velocidade\n");
+    printf("2. Conversor de Comprimento\n");
+    printf("3. Conversor de Volume\n");
+    printf("4. Conversor de Tempo\n");
+    printf("5. Conversor de Temperatura\n");
+    printf("6. COnversor de massa\n");
+    printf("7. Conversor de Potencia\n");
+    printf("8. Conversor de Area\n");
+    printf("9. Conversor de Bits\n");
+    
+    printf("\n0. Sair\n");
+}
+
 int main()
 {
     setlocale(LC_ALL, "pt_BR.UTF-8");
@@ -24,27 +40,11 @@ int main()
     int conversao;
 
     do
-    {    
-        clearTerminal();
-
-        printf("CONVERSOR DE UNIDADES EM C:\n\n");
-        
-        printf("1. Conversor de Velocidade\n");
-        printf("2. Conversor de Comprimento\n");
-        printf("3. Conversor de Volume\n");
-        printf("4. Conversor de Tempo\n");
-        printf("5. Conversor de Temperatura\n");
-        printf("6. COnversor de massa\n");
-        printf("7. Conversor de Potencia\n");
-        printf("8. Conversor de Area\n");
-        printf("9. Conversor de Bits\n");
-        
-        printf("\n0. Sair\n");
-        
-        printf("\nEscolha o tipo de conversão que deseja fazer: ");
-        scanf("%d", &conversao);
-        
-        limparTela();
+    {
+        do {
+            clearTerminal();
+            displayMainMenu();
+        } while (input(&conversao, INT, "\nEscolha o tipo de conversão que deseja fazer: ") != 1);
 
         switch (conversao)
         {
