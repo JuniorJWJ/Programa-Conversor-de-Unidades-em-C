@@ -1,8 +1,11 @@
+#ifndef BITS_H
+#define BITS_H
+
 #include <stdio.h>
 
 #include "./utils.h"
 
-void displayMenu() {
+void displayBitsMenu() {
     printf("CONVERSOR DE BITS:\n\n");
 
     printf("1. Bits para Bytes.\n");
@@ -25,7 +28,7 @@ void conversorBits() {
     do {
         do {
             clearTerminal();
-            displayMenu();
+            displayBitsMenu();
         } while (input(&option, INT, "\nEscolha uma opção: ") != 1);
 
         switch (option) {
@@ -73,3 +76,4 @@ void conversorBits() {
         }
     } while (option != 0);
 }
+#endif
