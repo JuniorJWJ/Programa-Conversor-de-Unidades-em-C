@@ -3,7 +3,7 @@
 #include "./utils.h"
 
 void displayMenu() {
-    printf("CONVERSOR DE BITS: \n");
+    printf("CONVERSOR DE BITS:\n\n");
 
     printf("1. Bits para Bytes.\n");
     printf("2. Bytes para Bits.\n");
@@ -16,19 +16,17 @@ void displayMenu() {
     printf("9. Terabytes para Bytes.\n");
     printf("10. Bytes para Terabytes.\n");
 
-    printf("0. Sair.\n");
+    printf("\n0. Sair.\n");
 }
 
-void runBitsConversor() {
+void conversorBits() {
     int option;
 
     do {
-        clearTerminal();
-        displayMenu();
-
-        while (input(&option, INT, "Escolha uma opcao:\n") != 1) {
-            printf("Por favor, insira um numero!\n");
-        }
+        do {
+            clearTerminal();
+            displayMenu();
+        } while (input(&option, INT, "\nEscolha uma opção: ") != 1);
 
         switch (option) {
             case 1:
@@ -62,7 +60,7 @@ void runBitsConversor() {
                 convert("Digite o valor em bytes: ", " bytes", "=", " TB", 1/1e+12);
                 break;
             case 0:
-                printf("Saindo do conversor de comprimento...\n");
+                printf("Saindo do conversor de bits...\n");
                 break;
             default:
                 printf("Selecione uma opção válida!\n\n");
@@ -70,7 +68,7 @@ void runBitsConversor() {
         }
 
         if (option != 0) {
-            printf("Pressione Enter para continuar...");
+            printf("\nPressione Enter para continuar...");
             while (getchar() != '\n');
         }
     } while (option != 0);
