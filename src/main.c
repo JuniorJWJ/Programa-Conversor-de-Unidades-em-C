@@ -75,8 +75,13 @@ int main()
         case 9:
             conversorBits();
             break;
+        case 0:
+            printf("Saindo do conversor de unidades...\n");
+            break;
         default:
             break;
         }
     } while (conversao != 0);
+
+    pause();
 }
