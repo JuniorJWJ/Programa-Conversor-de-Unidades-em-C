@@ -8,8 +8,6 @@ typedef enum {
 } DataType;
 
 int input(void *value, DataType type, char *text) {
-    fflush(stdin); // Limpa o buffer de entrada
-
     printf("%s", text);
     
     const unsigned short MAX_INPUT_BUFFER_LENGTH = 256;
@@ -38,7 +36,7 @@ float convert(char *inputText, char *inputUnity, char *outputText, char *outputU
     input(&i, FLOAT, inputText);
     
     o = i * multiplier;
-    printf("%.8f%s %s %.8f%s\n", i, inputUnity, outputText, o, outputUnity);
+    printf("%f%s %s %f%s\n", i, inputUnity, outputText, o, outputUnity);
     
     return o;
 }
