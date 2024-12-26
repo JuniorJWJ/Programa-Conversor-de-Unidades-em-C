@@ -87,12 +87,10 @@ void conversorVelocidade()
                 printf("\n\n");
                 break;
             case 0:
-                printf("Saindo do conversor de velocidade...");
-                printf("\n");
+                printf("Saindo do conversor de velocidade...\n");
                 break;
             default:
-                printf("Selecione uma opção válida!\n");
-                printf("\n");
+                printf("Selecione uma opção válida!\n\n");
                 break;
         }
         
