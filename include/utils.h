@@ -1,3 +1,6 @@
+#ifndef UTILS_H
+#define UTILS_H
+
 #include <stdio.h>
 
 typedef enum {
@@ -48,3 +51,5 @@ void clearTerminal() {
         system("clear"); // Limpa o terminal no Linux
     #endif
 }
+
+#endif
