@@ -11,6 +11,7 @@
 #include "../include/tempo.h"
 #include "../include/temperatura.h"
 #include "../include/potencia.h"
+#include "../include/area.h"
 
 int main()
 {
@@ -35,7 +36,7 @@ int main()
         printf("5. Conversor de Temperatura\n");
         printf("6. COnversor de massa\n");
         printf("7. Conversor de Potencia\n");
-        printf("8. (colocar o tipo de conversao)\n");
+        printf("8. Conversor de Area\n");
         printf("9. Conversor de Bits\n");
         
         printf("\n0. Sair\n");
@@ -70,7 +71,7 @@ int main()
             conversorPotencia();
             break;
         case 8:
-            // TODO: Adicionar a função do tipo de conversão
+            conversorArea(); // Chama o conversor de area
             break;
         case 9:
             conversorBits();
