@@ -45,8 +45,6 @@ void conversorMassa() {
             printf("\n0. Sair.\n");
         } while (input(&cMassa, INT, "\nEscolha o tipo de conversão que deseja fazer: ") != 1);
 
-        printf("\n");
-
         switch (cMassa) {
             case 1:
                 printf("Digite o valor em quilogramas: ");

@@ -50,50 +50,50 @@ void conversorVelocidade()
 
         switch (cVelocidade)
         {
-        case 1:
-            printf("Digite o valor em Km/H: ");
-            scanf("%lf", &valorV);
-            printf("\n%.2lf Km/h = %.2lf m/s", valorV, kmhParaMetros(valorV));
-            printf("\n\n");
-            break;
-        case 2:
-            printf("Digite o valor em Km/h: ");
-            scanf("%lf", &valorV);
-            printf("\n%.2lf Km/h = %.2lf mph", valorV, kmhParaMph(valorV));
-            printf("\n\n");
-            break;
-        case 3:
-            printf("Digite o valor em m/s: ");
-            scanf("%lf", &valorV);
-            printf("\n%.2lf m/s = %.2lf Kmh", valorV, metrosParaKmh(valorV));
-            printf("\n\n");
-            break;
-        case 4:
-            printf("Digite o valor em m/s: ");
-            scanf("%lf", &valorV);
-            printf("\n%.2lf m/s = %.2lf mph", valorV, metrosParaMph(valorV));
-            printf("\n\n");
-            break;
-        case 5:
-            printf("Digite o valor em mph: ");
-            scanf("%lf", &valorV);
-            printf("\n%.2lf mph = %.2lf m/s.", valorV, mphParaMetros(valorV));
-            printf("\n\n");
-            break;
-        case 6:
-            printf("Digite o valor em mph: ");
-            scanf("%lf", &valorV);
-            printf("\n%.2lf mph = %.2lf km/h.", valorV, mphParaKmh(valorV));
-            printf("\n\n");
-            break;
-        case 0:
-            printf("Saindo do conversor de velocidade...");
-            printf("\n");
-            break;
-        default:
-            printf("Selecione uma opcao valida!\n");
-            printf("\n");
-            break;
+            case 1:
+                printf("Digite o valor em Km/H: ");
+                scanf("%lf", &valorV);
+                printf("\n%.2lf Km/h = %.2lf m/s", valorV, kmhParaMetros(valorV));
+                printf("\n\n");
+                break;
+            case 2:
+                printf("Digite o valor em Km/h: ");
+                scanf("%lf", &valorV);
+                printf("\n%.2lf Km/h = %.2lf mph", valorV, kmhParaMph(valorV));
+                printf("\n\n");
+                break;
+            case 3:
+                printf("Digite o valor em m/s: ");
+                scanf("%lf", &valorV);
+                printf("\n%.2lf m/s = %.2lf Kmh", valorV, metrosParaKmh(valorV));
+                printf("\n\n");
+                break;
+            case 4:
+                printf("Digite o valor em m/s: ");
+                scanf("%lf", &valorV);
+                printf("\n%.2lf m/s = %.2lf mph", valorV, metrosParaMph(valorV));
+                printf("\n\n");
+                break;
+            case 5:
+                printf("Digite o valor em mph: ");
+                scanf("%lf", &valorV);
+                printf("\n%.2lf mph = %.2lf m/s.", valorV, mphParaMetros(valorV));
+                printf("\n\n");
+                break;
+            case 6:
+                printf("Digite o valor em mph: ");
+                scanf("%lf", &valorV);
+                printf("\n%.2lf mph = %.2lf km/h.", valorV, mphParaKmh(valorV));
+                printf("\n\n");
+                break;
+            case 0:
+                printf("Saindo do conversor de velocidade...");
+                printf("\n");
+                break;
+            default:
+                printf("Selecione uma opção válida!\n");
+                printf("\n");
+                break;
         }
         
         pause();

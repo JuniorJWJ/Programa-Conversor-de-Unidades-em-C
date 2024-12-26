@@ -47,9 +47,7 @@ void conversorArea() {
             clearTerminal();
             displayAreaMenu();
         } while (input(&cArea, INT, "\nEscolha o tipo de conversão que deseja fazer: ") != 1);
-
-        printf("\n");
-
+        
         switch (cArea) {
             case 1:
                 printf("Digite o valor em metros quadrados: ");

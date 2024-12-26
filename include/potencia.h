@@ -81,7 +81,7 @@ void conversorPotencia() {
                 printf("Saindo do conversor de potencia...\n");
                 break;
             default:
-                printf("Opcao invalida! Tente novamente.\n");
+                printf("Selecione uma opção válida!\n");
                 break;
         }
         

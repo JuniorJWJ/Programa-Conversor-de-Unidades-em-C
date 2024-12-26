@@ -49,7 +49,6 @@ void conversorTemperatura() {
             printf("\n0. Sair.\n");
         } while (input(&opcao, INT, "\nEscolha o tipo de conversão que deseja fazer: ") != 1);
 
-
         switch (opcao) {
             case 1:
                 printf("Digite o valor em Celsius: ");

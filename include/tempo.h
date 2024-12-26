@@ -76,7 +76,7 @@ void conversorTempo() {
                 printf("Saindo do conversor de tempo...\n");
                 break;
             default:
-                printf("Selecione uma opcao valida!\n");
+                printf("Selecione uma opção válida!\n");
                 break;
         }
         

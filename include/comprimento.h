@@ -48,8 +48,6 @@ void conversorComprimento() {
             displayComprimentoMenu();
         } while (input(&cComprimento, INT, "\nEscolha o tipo de conversão que deseja fazer: ") != 1);
 
-        printf("\n");
-
         switch (cComprimento) {
             case 1:
                 printf("Digite o valor em metros: ");
