@@ -51,31 +51,37 @@ void conversorPotencia() {
                 printf("Digite o valor em Watts: ");
                 scanf("%lf", &valor);
                 printf("\n%.2lf Watts = %.2lf Quilowatts\n", valor, wattsParaQuilowatts(valor));
+                getchar();
                 break;
             case 2:
                 printf("Digite o valor em Watts: ");
                 scanf("%lf", &valor);
                 printf("\n%.2lf Watts = %.2lf Cavalos-vapor\n", valor, wattsParaCavalosVapor(valor));
+                getchar();
                 break;
             case 3:
                 printf("Digite o valor em Quilowatts: ");
                 scanf("%lf", &valor);
                 printf("\n%.2lf Quilowatts = %.2lf Watts\n", valor, quilowattsParaWatts(valor));
+                getchar();
                 break;
             case 4:
                 printf("Digite o valor em Quilowatts: ");
                 scanf("%lf", &valor);
                 printf("\n%.2lf Quilowatts = %.2lf Cavalos-vapor\n", valor, quilowattsParaCavalosVapor(valor));
+                getchar();
                 break;
             case 5:
                 printf("Digite o valor em Cavalos-vapor: ");
                 scanf("%lf", &valor);
                 printf("\n%.2lf Cavalos-vapor = %.2lf Watts\n", valor, cavalosVaporParaWatts(valor));
+                getchar();
                 break;
             case 6:
                 printf("Digite o valor em Cavalos-vapor: ");
                 scanf("%lf", &valor);
                 printf("\n%.2lf Cavalos-vapor = %.2lf Quilowatts\n", valor, cavalosVaporParaQuilowatts(valor));
+                getchar();
                 break;
             case 0:
                 printf("Saindo do conversor de potencia...\n");

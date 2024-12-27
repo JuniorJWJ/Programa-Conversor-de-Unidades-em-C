@@ -46,31 +46,37 @@ void conversorTempo() {
                 printf("Digite o valor em segundos: ");
                 scanf("%lf", &valorT);
                 printf("\n%.2lf segundos = %.2lf minutos\n", valorT, segundosParaMinutos(valorT));
+                getchar();
                 break;
             case 2:
                 printf("Digite o valor em segundos: ");
                 scanf("%lf", &valorT);
                 printf("\n%.2lf segundos = %.2lf horas\n", valorT, segundosParaHoras(valorT));
+                getchar();
                 break;
             case 3:
                 printf("Digite o valor em minutos: ");
                 scanf("%lf", &valorT);
                 printf("\n%.2lf minutos = %.2lf segundos\n", valorT, minutosParaSegundos(valorT));
+                getchar();
                 break;
             case 4:
                 printf("Digite o valor em minutos: ");
                 scanf("%lf", &valorT);
                 printf("\n%.2lf minutos = %.2lf horas\n", valorT, minutosParaHoras(valorT));
+                getchar();
                 break;
             case 5:
                 printf("Digite o valor em horas: ");
                 scanf("%lf", &valorT);
                 printf("\n%.2lf horas = %.2lf segundos\n", valorT, horasParaSegundos(valorT));
+                getchar();
                 break;
             case 6:
                 printf("Digite o valor em horas: ");
                 scanf("%lf", &valorT);
                 printf("\n%.2lf horas = %.2lf minutos\n", valorT, horasParaMinutos(valorT));
+                getchar();
                 break;
             case 0:
                 printf("Saindo do conversor de tempo...\n");

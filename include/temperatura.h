@@ -55,31 +55,37 @@ void conversorTemperatura() {
                 printf("Digite o valor em Celsius: ");
                 scanf("%f", &valorT);
                 printf("\n%.2f Celsius = %.2f Fahrenheit\n\n", valorT, celsiusParaFahrenheit(valorT));
+                getchar();
                 break;
             case 2:
                 printf("Digite o valor em Celsius: ");
                 scanf("%f", &valorT);
                 printf("\n%.2f Celsius = %.2f Kelvin\n\n", valorT, celsiusParaKelvin(valorT));
+                getchar();
                 break;
             case 3:
                 printf("Digite o valor em Fahrenheit: ");
                 scanf("%f", &valorT);
                 printf("\n%.2f Fahrenheit = %.2f Celsius\n\n", valorT, fahrenheitParaCelsius(valorT));
+                getchar();
                 break;
             case 4:
                 printf("Digite o valor em Fahrenheit: ");
                 scanf("%f", &valorT);
                 printf("\n%.2f Fahrenheit = %.2f Kelvin\n\n", valorT, fahrenheitParaKelvin(valorT));
+                getchar();
                 break;
             case 5:
                 printf("Digite o valor em Kelvin: ");
                 scanf("%f", &valorT);
                 printf("\n%.2f Kelvin = %.2f Celsius\n\n", valorT, kelvinParaCelsius(valorT));
+                getchar();
                 break;
             case 6:
                 printf("Digite o valor em Kelvin: ");
                 scanf("%f", &valorT);
                 printf("\n%.2f Kelvin = %.2f Fahrenheit\n\n", valorT, kelvinParaFahrenheit(valorT));
+                getchar();
                 break;
             case 0:
                 printf("Saindo do conversor de temperatura...\n");

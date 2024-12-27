@@ -53,31 +53,37 @@ void conversorArea() {
                 printf("Digite o valor em metros quadrados: ");
                 scanf("%f", &valorV);
                 printf("\n%.2f metros quadrados = %.2f centímetros quadrados\n\n", valorV, metro2paracent2(valorV));
+                getchar();
                 break;
             case 2:
                 printf("Digite o valor em metros quadrados: ");
                 scanf("%f", &valorV);
                 printf("\n%.2f metros quadrados = %.2f milímetros quadrados\n\n", valorV, metro2paramili2(valorV));
+                getchar();
                 break;
             case 3:
                 printf("Digite o valor em centímetros quadrados: ");
                 scanf("%f", &valorV);
                 printf("\n%.2f centímetros quadrados = %.2f metros quadrados\n\n", valorV, cent2parametros2(valorV));
+                getchar();
                 break;
             case 4:
                 printf("Digite o valor em centímetros quadrados: ");
                 scanf("%f", &valorV);
                 printf("\n%.2f centímetros quadrados = %.2f milímetros quadrados\n\n", valorV, cent2paramili2(valorV));
+                getchar();
                 break;
             case 5:
                 printf("Digite o valor em milímetros quadrados: ");
                 scanf("%f", &valorV);
                 printf("\n%.2f milímetros quadrados = %.2f metros quadrados\n\n", valorV, mili2parametros2(valorV));
+                getchar();
                 break;
             case 6:
                 printf("Digite o valor em milímetros quadrados: ");
                 scanf("%f", &valorV);
                 printf("\n%.2f milímetros quadrados = %.2f centímetros quadrados\n\n", valorV, mili2paracent2(valorV));
+                getchar();
                 break;
             case 0:
                 printf("Saindo do conversor de Área...\n");

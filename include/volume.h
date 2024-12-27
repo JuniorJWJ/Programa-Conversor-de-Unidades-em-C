@@ -48,31 +48,37 @@ void conversorVolume() {
                 printf("Digite o valor em litros: ");
                 scanf("%f", &valorV);
                 printf("\n%.2f litros = %.2f mililitros\n\n", valorV, litroParaMililitro(valorV));
+                getchar();
                 break;
             case 2:
                 printf("Digite o valor em litros: ");
                 scanf("%f", &valorV);
                 printf("\n%.2f litros = %.6f metros cúbicos\n\n", valorV, litroParaMetroCubico(valorV));
+                getchar();
                 break;
             case 3:
                 printf("Digite o valor em mililitros: ");
                 scanf("%f", &valorV);
                 printf("\n%.2f mililitros = %.2f litros\n\n", valorV, mililitroParaLitro(valorV));
+                getchar();
                 break;
             case 4:
                 printf("Digite o valor em mililitros: ");
                 scanf("%f", &valorV);
                 printf("\n%.2f mililitros = %.6f metros cúbicos\n\n", valorV, mililitroParaMetroCubico(valorV));
+                getchar();
                 break;
             case 5:
                 printf("Digite o valor em metros cúbicos: ");
                 scanf("%f", &valorV);
                 printf("\n%.6f metros cúbicos = %.2f litros\n\n", valorV, metroCubicoParaLitro(valorV));
+                getchar();
                 break;
             case 6:
                 printf("Digite o valor em metros cúbicos: ");
                 scanf("%f", &valorV);
                 printf("\n%.6f metros cúbicos = %.2f mililitros\n\n", valorV, metroCubicoParaMililitro(valorV));
+                getchar();
                 break;
             case 0:
                 printf("Saindo do conversor de volume...\n");

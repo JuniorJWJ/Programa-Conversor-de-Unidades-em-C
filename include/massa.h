@@ -50,31 +50,37 @@ void conversorMassa() {
                 printf("Digite o valor em quilogramas: ");
                 scanf("%f", &valorM);
                 printf("\n%.2f quilogramas = %.2f gramas\n\n", valorM, quilogramaParaGrama(valorM));
+                getchar();
                 break;
             case 2:
                 printf("Digite o valor em quilogramas: ");
                 scanf("%f", &valorM);
                 printf("\n%.2f quilogramas = %.6f toneladas\n\n", valorM, quilogramaParaTonelada(valorM));
+                getchar();
                 break;
             case 3:
                 printf("Digite o valor em gramas: ");
                 scanf("%f", &valorM);
                 printf("\n%.2f gramas = %.2f quilogramas\n\n", valorM, gramaParaQuilograma(valorM));
+                getchar();
                 break;
             case 4:
                 printf("Digite o valor em gramas: ");
                 scanf("%f", &valorM);
                 printf("\n%.2f gramas = %.6f toneladas\n\n", valorM, gramaParaTonelada(valorM));
+                getchar();
                 break;
             case 5:
                 printf("Digite o valor em toneladas: ");
                 scanf("%f", &valorM);
                 printf("\n%.6f toneladas = %.2f quilogramas\n\n", valorM, toneladaParaQuilograma(valorM));
+                getchar();
                 break;
             case 6:
                 printf("Digite o valor em toneladas: ");
                 scanf("%f", &valorM);
                 printf("\n%.6f toneladas = %.2f gramas\n\n", valorM, toneladaParaGrama(valorM));
+                getchar();
                 break;
             case 0:
                 printf("Saindo do conversor de massa...\n");
