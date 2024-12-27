@@ -56,7 +56,7 @@ void pause() {
     #ifdef _WIN32
          system("pause"); // Pausa o terminal no Windows
     #else
-        printf("Pressione qualquer tecla para continuar...");
+        printf("Pressione ENTER para continuar...");
         getchar();
     #endif
 }

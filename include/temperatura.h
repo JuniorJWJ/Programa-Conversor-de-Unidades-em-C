@@ -2,6 +2,7 @@
 #define TEMPERATURA_H
 
 #include <stdio.h>
+#include "./utils.h"
 
 // Funções de conversão de temperatura
 float celsiusParaFahrenheit(float celsius) {
@@ -87,6 +88,8 @@ void conversorTemperatura() {
                 printf("Selecione uma opção válida!\n\n");
                 break;
         }
+        pause();
+        clearTerminal();
     } while (opcao != 0);
 }
 
