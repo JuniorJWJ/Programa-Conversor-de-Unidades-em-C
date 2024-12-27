@@ -89,7 +89,6 @@ void conversorTemperatura() {
                 break;
         }
         pause();
-        clearTerminal();
     } while (opcao != 0);
 }
 
