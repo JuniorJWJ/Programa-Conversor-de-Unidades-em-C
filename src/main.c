@@ -15,15 +15,15 @@
 void displayMainMenu() {
     printf("CONVERSOR DE UNIDADES EM C:\n\n");
     
-    printf("1. Conversor de Velocidade\n");
-    printf("2. Conversor de Comprimento\n");
-    printf("3. Conversor de Volume\n");
-    printf("4. Conversor de Tempo\n");
-    printf("5. Conversor de Temperatura\n");
-    printf("6. COnversor de massa\n");
-    printf("7. Conversor de Potencia\n");
-    printf("8. Conversor de Area\n");
-    printf("9. Conversor de Bits\n");
+    printf("1. Conversor de velocidade\n");
+    printf("2. Conversor de comprimento\n");
+    printf("3. Conversor de volume\n");
+    printf("4. Conversor de tempo\n");
+    printf("5. Conversor de temperatura\n");
+    printf("6. Conversor de massa\n");
+    printf("7. Conversor de potencia\n");
+    printf("8. Conversor de area\n");
+    printf("9. Conversor de bits\n");
     
     printf("\n0. Sair\n");
 }
