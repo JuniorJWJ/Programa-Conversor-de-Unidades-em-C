@@ -52,11 +52,6 @@ void clearTerminal() {
     #endif
 }
 
-void clearBuffer(){
-    char c;
-    while ((c = getchar()) != EOF && c != '\n');
-}
-
 void pause() {
     #ifdef _WIN32
          system("pause"); // Pausa o terminal no Windows
